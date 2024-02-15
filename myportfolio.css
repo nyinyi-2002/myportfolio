@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins&family=Roboto:ital,wght@0,100;1,100&family=Rowdies:wght@700&display=swap');
+
+/* font-family: 'Fjalla One', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rowdies', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar .title{
+    font-family: 'Rowdies', sans-serif;
+    animation: headtitle 4s linear 2s infinite alternate;
+}
+
+@keyframes headtitle{
+    0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+
+.tag-name span {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.tag-name span:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.home .junior {
+    font-family: 'Roboto', sans-serif;
+}
+
+.home .name {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.home h1,
+.home h2 {
+    transition: 0.5s;
+}
+
+.home h1:hover,
+.home h2:hover {
+    transform: translateX(3rem);
+    transition: 0.5s;
+}
+
+.home .buttons button {
+    transition: 0.5s;
+}
+
+.home .buttons button:hover {
+    transform: scale(1.1);
+    filter: brightness(3);
+}
+
+.about .details button {
+    transition: 1s;
+}
+
+.about .details button:hover {
+    transform: translateX(2rem);
+    transition: 1s;
+}
+
+.contact .email,
+.contact .phone,
+.contact .address {
+    transition: 0.5s;
+}
+
+.contact .email:hover,
+.contact .phone:hover,
+.contact .address:hover {
+    transform: translateY(-0.5rem);
+    transition: 0.5s;
+}
+
+@media(max-width:700px){
+    .home h1,
+    .home h2 {
+    font-size: 16px;
+}
+.home p{
+    font-size: 12px
+}
+}
+
+.about .aboutme,
+.skill .skill-name,
+.contact .contact-name{
+    animation: mytitle 4s linear 2s infinite alternate;
+} 
+
+@keyframes mytitle{
+    0%   {color: rgb(233, 15, 15);}
+  25%  {color: rgb(235, 235, 50);}
+  50%  {color: rgb(57, 57, 211);}
+  100% {color: rgb(156, 92, 66);}
+}
